@@ -1,0 +1,16 @@
+{
+  "name": "graphql-objc",
+  "version": "1.0.0",
+  "description": "Wrapper for use in graphql-objc",
+  "main": "index.js",
+  "scripts": {
+    "build": "WEBPACK_ENV=build webpack"
+  },
+  "author": "Tommy Lillehagen",
+  "dependencies": {
+    "graphql": "^0.9.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.3.2"
+  }
+}

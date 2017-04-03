@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'GraphQLTests' do
+  pod 'GraphQL', :path => '../'
+end

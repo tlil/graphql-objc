@@ -1,0 +1,18 @@
+PODS:
+  - GraphQL (0.0.1):
+    - GraphQL/Resources (= 0.0.1)
+  - GraphQL/Resources (0.0.1)
+
+DEPENDENCIES:
+  - GraphQL (from `../`)
+
+EXTERNAL SOURCES:
+  GraphQL:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GraphQL: ecc90c5f966422fc6bdc8355617f0efa09d78203
+
+PODFILE CHECKSUM: 3ef658026d4fe28d4019b2c062bad876d3c2c4ec
+
+COCOAPODS: 1.2.0
