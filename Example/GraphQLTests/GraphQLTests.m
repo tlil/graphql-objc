@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import <GraphQL/GQLEngine.h>
+#import "GQLQueryType.h"
 
 @interface GraphQLTests : XCTestCase
 
@@ -29,28 +30,51 @@ static GraphQLEngine* engine;
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testValidQuery {
     XCTestExpectation *successExpectation =
     [self expectationWithDescription:@"Successful query"];
+    
+    GQLQueryType *root = [[GQLQueryType alloc] init];
+    
     [engine executeQuery:@"{ hello }"
-                withRoot:nil
+                withRoot:root
                 andCallback:^(NSString* error, NSString* result)
     {
-        [successExpectation fulfill];
+        if ([result isEqualToString:@"{\"data\":{\"hello\":\"Hello world\"}}"]) {
+            [successExpectation fulfill];
+        } else {
+            XCTFail(@"Invalid response from query");
+        }
     }];
     
     [self waitForExpectationsWithTimeout:2 handler:^(NSError * _Nullable error) {
         if (error != nil) {
-            XCTFail("Query timed out");
+            XCTFail(@"Query timed out");
         }
     }];
-    
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+- (void)testInvalidQuery {
+    XCTestExpectation *successExpectation =
+    [self expectationWithDescription:@"Successful query"];
+    
+    GQLQueryType *root = [[GQLQueryType alloc] init];
+    
+    [engine executeQuery:@"{ foo }"
+                withRoot:root
+             andCallback:^(NSString* error, NSString* result)
+     {
+         if ([result isEqualToString:@"{\"errors\":[{\"message\":\"Cannot query field \\\"foo\\\" on type \\\"Query\\\".\",\"locations\":[{\"line\":1,\"column\":3}]}]}"]) {
+             [successExpectation fulfill];
+         } else {
+             XCTFail(@"Invalid response from query");
+         }
+     }];
+    
+    [self waitForExpectationsWithTimeout:2 handler:^(NSError * _Nullable error) {
+        if (error != nil) {
+            XCTFail(@"Query timed out");
+        }
     }];
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6565AEA31E92D041003BDF94 /* GraphQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6565AEA21E92D041003BDF94 /* GraphQLTests.m */; };
 		65D406311E92D69C004254E8 /* Schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 65D406301E92D69C004254E8 /* Schema.graphql */; };
+		65D406331E92EE3C004254E8 /* GQLQueryType.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D406321E92EE3C004254E8 /* GQLQueryType.m */; };
 		D661457FBDF83B14E5791AF3 /* Pods_GraphQLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB612D72AAC75406C6464D6 /* Pods_GraphQLTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,8 @@
 		6565AEA21E92D041003BDF94 /* GraphQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphQLTests.m; sourceTree = "<group>"; };
 		6565AEA41E92D041003BDF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D406301E92D69C004254E8 /* Schema.graphql */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text; path = Schema.graphql; sourceTree = "<group>"; tabWidth = 2; };
+		65D406321E92EE3C004254E8 /* GQLQueryType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQLQueryType.m; sourceTree = "<group>"; };
+		65D406341E92EE56004254E8 /* GQLQueryType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQLQueryType.h; sourceTree = "<group>"; };
 		AD542E31A1131C5FA5BA0668 /* Pods-GraphQLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphQLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphQLTests/Pods-GraphQLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E9F2095F433777A24096ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DDB612D72AAC75406C6464D6 /* Pods_GraphQLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphQLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,8 @@
 				6565AEA41E92D041003BDF94 /* Info.plist */,
 				6565AEA21E92D041003BDF94 /* GraphQLTests.m */,
 				65D406301E92D69C004254E8 /* Schema.graphql */,
+				65D406321E92EE3C004254E8 /* GQLQueryType.m */,
+				65D406341E92EE56004254E8 /* GQLQueryType.h */,
 			);
 			path = GraphQLTests;
 			sourceTree = "<group>";
@@ -125,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GQL;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = tlil87;
 				TargetAttributes = {
 					6565AE9F1E92D041003BDF94 = {
@@ -218,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6565AEA31E92D041003BDF94 /* GraphQLTests.m in Sources */,
+				65D406331E92EE3C004254E8 /* GQLQueryType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,14 +243,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -277,13 +288,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
