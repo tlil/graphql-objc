@@ -1,1 +1,3 @@
 node_modules/
+engine.packed.js
+npm-debug.log

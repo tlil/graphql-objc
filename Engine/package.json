@@ -4,13 +4,14 @@
   "description": "Wrapper for use in graphql-objc",
   "main": "index.js",
   "scripts": {
-    "build": "WEBPACK_ENV=build webpack"
+    "build": "webpack && mv engine.js engine.packed.js && babel --no-comments --minified -o engine.js engine.packed.js"
   },
   "author": "Tommy Lillehagen",
   "dependencies": {
     "graphql": "^0.9.1"
   },
   "devDependencies": {
-    "webpack": "^2.3.2"
+    "babel-cli": "^6.24.0",
+    "webpack": "^2.3.3"
   }
 }
