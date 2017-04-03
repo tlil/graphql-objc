@@ -6,6 +6,10 @@ This library uses the GraphQL [reference implementation from Facebook](https://g
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+The following basic unit tests demonstrate the use of the engine together with protocols for query resolution:
+
+ * [Unit Tests](https://github.com/tlil/graphql-objc/tree/master/Example/GraphQLTests)
+
 ## Installation
 
 GraphQL is available as a CocoaPod. To install it, simply add the following line to your Podfile:
