@@ -1,5 +1,5 @@
 //
-//  GQLCaptureCapabilityType.m
+//  GQLMotorbikeType.m
 //  GraphQL
 //
 //  Created by Tommy Lillehagen on 03/04/2017.
@@ -7,8 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GQLCaptureCapabilityType.h"
+#import "GQLMotorbikeType.h"
 
-GraphQLTypeImplementation(CaptureCapability)
-    
+GraphQLTypeImplementation(Motorbike)
+
+-(int) numberOfSeats
+{
+    return 1;
+}
+
+-(int) numberOfWheels
+{
+    return 2;
+}
+
 GraphQLTypeImplementationEnd

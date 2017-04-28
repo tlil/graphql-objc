@@ -1,36 +1,21 @@
 type Query {
   # Returns a "Hello world" string
   hello: String
-  capabilities: [Capability]
+  vehicles: [Vehicle]
 }
 
-enum SourceType {
-  MACHINE
-  TABLET
-  PHONE
+interface Vehicle {
+  numberOfSeats: Int
+  numberOfWheels: Int
 }
 
-scalar URL
-
-type Source {
-  type: SourceType
-  ip: String
-  name: String
+type Car implements Vehicle {
+  numberOfSeats: Int
+  numberOfWheels: Int
+  numberOfDoors: Int
 }
 
-interface Capability {
-  source: Source
-  isEnabled: Boolean
-}
-
-type CaptureCapability implements Capability {
-  source: Source
-  isEnabled: Boolean
-  feed: URL
-}
-
-type TaggingCapability implements Capability {
-  source: Source
-  isEnabled: Boolean
-  isLive: Boolean
+type Motorbike implements Vehicle {
+  numberOfSeats: Int
+  numberOfWheels: Int
 }
