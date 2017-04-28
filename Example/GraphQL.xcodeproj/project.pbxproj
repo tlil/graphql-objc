@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6565AEA31E92D041003BDF94 /* GraphQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6565AEA21E92D041003BDF94 /* GraphQLTests.m */; };
+		65B248041EB276300043B85E /* GQLTaggingCapabilityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B248031EB276300043B85E /* GQLTaggingCapabilityType.m */; };
+		65C68E611EB24F3A00751A04 /* GQLCaptureCapabilityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C68E601EB24F3A00751A04 /* GQLCaptureCapabilityType.m */; };
 		65D406311E92D69C004254E8 /* Schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 65D406301E92D69C004254E8 /* Schema.graphql */; };
 		65D406331E92EE3C004254E8 /* GQLQueryType.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D406321E92EE3C004254E8 /* GQLQueryType.m */; };
 		D661457FBDF83B14E5791AF3 /* Pods_GraphQLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB612D72AAC75406C6464D6 /* Pods_GraphQLTests.framework */; };
@@ -21,6 +23,10 @@
 		6565AEA01E92D041003BDF94 /* GraphQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6565AEA21E92D041003BDF94 /* GraphQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphQLTests.m; sourceTree = "<group>"; };
 		6565AEA41E92D041003BDF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B248031EB276300043B85E /* GQLTaggingCapabilityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQLTaggingCapabilityType.m; sourceTree = "<group>"; };
+		65B248051EB276420043B85E /* GQLTaggingCapabilityType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQLTaggingCapabilityType.h; sourceTree = "<group>"; };
+		65C68E5F1EB24EB300751A04 /* GQLCaptureCapabilityType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQLCaptureCapabilityType.h; sourceTree = "<group>"; };
+		65C68E601EB24F3A00751A04 /* GQLCaptureCapabilityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQLCaptureCapabilityType.m; sourceTree = "<group>"; };
 		65D406301E92D69C004254E8 /* Schema.graphql */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text; path = Schema.graphql; sourceTree = "<group>"; tabWidth = 2; };
 		65D406321E92EE3C004254E8 /* GQLQueryType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQLQueryType.m; sourceTree = "<group>"; };
 		65D406341E92EE56004254E8 /* GQLQueryType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQLQueryType.h; sourceTree = "<group>"; };
@@ -96,6 +102,10 @@
 				65D406301E92D69C004254E8 /* Schema.graphql */,
 				65D406321E92EE3C004254E8 /* GQLQueryType.m */,
 				65D406341E92EE56004254E8 /* GQLQueryType.h */,
+				65C68E601EB24F3A00751A04 /* GQLCaptureCapabilityType.m */,
+				65C68E5F1EB24EB300751A04 /* GQLCaptureCapabilityType.h */,
+				65B248031EB276300043B85E /* GQLTaggingCapabilityType.m */,
+				65B248051EB276420043B85E /* GQLTaggingCapabilityType.h */,
 			);
 			path = GraphQLTests;
 			sourceTree = "<group>";
@@ -222,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B248041EB276300043B85E /* GQLTaggingCapabilityType.m in Sources */,
 				6565AEA31E92D041003BDF94 /* GraphQLTests.m in Sources */,
+				65C68E611EB24F3A00751A04 /* GQLCaptureCapabilityType.m in Sources */,
 				65D406331E92EE3C004254E8 /* GQLQueryType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -78,6 +78,7 @@
     andOperationName:(NSString*)operationName
          andCallback:(void(^)(NSString* error, NSString* result)) callback
 {
+    // TODO thread-safety
     self.context[@"q"] = query;
     self.context[@"v"] = variables;
     self.context[@"o"] = operationName;

@@ -8,12 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "GQLQueryType.h"
+#import "GQLCaptureCapabilityType.h"
+#import "GQLTaggingCapabilityType.h"
 
-@implementation GQLQueryType
+GraphQLTypeImplementation(Query)
 
 -(NSString*) hello
 {
     return @"Hello world";
 }
 
-@end
+-(NSArray*) capabilities
+{
+    GQLCaptureCapabilityType *cap1 = [[GQLCaptureCapabilityType alloc] init];
+    GQLTaggingCapabilityType *cap2 = [[GQLTaggingCapabilityType alloc] init];
+    return [NSArray arrayWithObjects: cap1, cap2, nil];
+}
+    
+GraphQLTypeImplementationEnd

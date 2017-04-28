@@ -21,6 +21,25 @@
 #define MainBundle [NSBundle mainBundle]
 #define Bundle [NSBundle bundleForClass:[self class]]
 
+#define GraphQLType(type) \
+    @protocol GQL##type##TypeExport <JSExport> \
+    -(NSString*) __typename; \
+
+#define GraphQLTypeEnd(type) \
+    @end \
+    @interface GQL##type##Type : NSObject <GQL##type##TypeExport> \
+    @end
+
+#define GraphQLTypeImplementation(type) \
+    @implementation GQL##type##Type \
+    -(NSString*) __typename \
+    { \
+        return @"" # type ""; \
+    }
+
+#define GraphQLTypeImplementationEnd \
+    @end
+
 @interface GraphQLEngine : NSObject
 
 @property JSContext *context;

@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038B4B88D524A17E45B3FB98251AB5BB /* GQLEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA14FBA74323EF7BD249C46796D77EE /* GQLEngine.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1ACF9A5AAA308D34C1A53D8C36419530 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D48A966C1F6CF3D5391D8A5B6C105E0 /* JavaScriptCore.framework */; };
+		20BF79CB442779D8437033BC0DF08F0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F2AC951B6C5D354A3B6ECB6C9D6BFE /* Cocoa.framework */; };
+		37FE14C0AA1241BF255C72A00FAD12B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F2AC951B6C5D354A3B6ECB6C9D6BFE /* Cocoa.framework */; };
+		445E881D9C7939BEEE49681FE90371C5 /* GQLEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = E48AE22F48CFAF4C20C8A391B860E702 /* GQLEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54467802234AD6C4F346810E90416FFE /* Pods-GraphQLTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1C1E1B1BA5DDF2C52342A5E23954DF /* Pods-GraphQLTests-dummy.m */; };
+		5E1E7B797774FFD25FB37EA34FD1DDF2 /* GraphQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D91AE44447853961324D54E61C25FDEA /* GraphQL-dummy.m */; };
+		AC9B24FCB00F0C6A771A2B7968ACF023 /* Pods-GraphQLTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AD90C60382EDEF9A4BB17E3720174A /* Pods-GraphQLTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1F918FFD41B51D40323891B6B264CA6 /* engine.js in Resources */ = {isa = PBXBuildFile; fileRef = DA510FD54CA359FA4AA1A7437DB415FF /* engine.js */; };
+		FC405F1D20082E630A01E605AA438B20 /* Scripts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD969913EAFF4AAE051534FD7FFA73E5 /* Scripts.bundle */; };
+		FDF8F95AF435DFC9CF46C63BBA4F165C /* GraphQL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CECF372BA470C280290DB41FC9DB3D12 /* GraphQL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90DBDF2A1CD12E986BA06E529DCBE925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E3A8F85ADF4281A926119157E226D05;
+			remoteInfo = GraphQL;
+		};
+		D0D4CFD2C9FD13E4F7248208AD25B826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334596E5CD702959F289D0EC66E0B130;
+			remoteInfo = "GraphQL-Scripts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E2FC19CE76157C497F5EDFDC4FE5DF2 /* GraphQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GraphQL.framework; path = GraphQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D61D02274D91F785FB8011DD63A360F /* GraphQL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GraphQL.xcconfig; sourceTree = "<group>"; };
+		2C0891B81FCFBFC3B14F9794B36B1D9F /* Pods-GraphQLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GraphQLTests.release.xcconfig"; sourceTree = "<group>"; };
+		3643E4394189F759C024266426825EF3 /* Pods-GraphQLTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GraphQLTests-frameworks.sh"; sourceTree = "<group>"; };
+		36548284C1EDA578590AF563A1846EA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D48A966C1F6CF3D5391D8A5B6C105E0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		4A29308825CA2B626186E300539B8740 /* Pods-GraphQLTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GraphQLTests.modulemap"; sourceTree = "<group>"; };
+		6B1C1E1B1BA5DDF2C52342A5E23954DF /* Pods-GraphQLTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GraphQLTests-dummy.m"; sourceTree = "<group>"; };
+		6ED72F5C35DCFF85F3C18E858446BDC2 /* Pods_GraphQLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GraphQLTests.framework; path = "Pods-GraphQLTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7477976F6F44E81515143A7DE0A40356 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		860385C0A7A128B514ABDF412AE8A940 /* ResourceBundle-Scripts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Scripts-Info.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A63544133B41689768FD39C3A2C040F2 /* Pods-GraphQLTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GraphQLTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BAACC6C9F2628D5B8E99E3BB45EEEE4A /* Pods-GraphQLTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GraphQLTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB64D73F21F19054A8E1B1F3F7894588 /* Pods-GraphQLTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GraphQLTests-resources.sh"; sourceTree = "<group>"; };
+		BE7966780E9717BCDEAF7E213A636CBF /* GraphQL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GraphQL.modulemap; sourceTree = "<group>"; };
+		C3F2AC951B6C5D354A3B6ECB6C9D6BFE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C5305F92EA6693F481EF75C6CA625369 /* Pods-GraphQLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GraphQLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB898D617232AE41D26F8962D6CE512E /* GraphQL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphQL-prefix.pch"; sourceTree = "<group>"; };
+		CECF372BA470C280290DB41FC9DB3D12 /* GraphQL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GraphQL-umbrella.h"; sourceTree = "<group>"; };
+		D91AE44447853961324D54E61C25FDEA /* GraphQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GraphQL-dummy.m"; sourceTree = "<group>"; };
+		DA510FD54CA359FA4AA1A7437DB415FF /* engine.js */ = {isa = PBXFileReference; includeInIndex = 1; path = engine.js; sourceTree = "<group>"; };
+		E48AE22F48CFAF4C20C8A391B860E702 /* GQLEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GQLEngine.h; sourceTree = "<group>"; };
+		E8AD90C60382EDEF9A4BB17E3720174A /* Pods-GraphQLTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GraphQLTests-umbrella.h"; sourceTree = "<group>"; };
+		FD969913EAFF4AAE051534FD7FFA73E5 /* Scripts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Scripts.bundle; path = Scripts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA14FBA74323EF7BD249C46796D77EE /* GQLEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GQLEngine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DC1DD49E22192E3BF6A0625448705F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BF79CB442779D8437033BC0DF08F0E /* Cocoa.framework in Frameworks */,
+				1ACF9A5AAA308D34C1A53D8C36419530 /* JavaScriptCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455EC635427613133EFC4C7E6BE2423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E491FE175E16FCBB309EE35EFA2CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FE14C0AA1241BF255C72A00FAD12B1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA69B0847ABFF9A2468E0938051A213 /* Pods-GraphQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				7477976F6F44E81515143A7DE0A40356 /* Info.plist */,
+				4A29308825CA2B626186E300539B8740 /* Pods-GraphQLTests.modulemap */,
+				A63544133B41689768FD39C3A2C040F2 /* Pods-GraphQLTests-acknowledgements.markdown */,
+				BAACC6C9F2628D5B8E99E3BB45EEEE4A /* Pods-GraphQLTests-acknowledgements.plist */,
+				6B1C1E1B1BA5DDF2C52342A5E23954DF /* Pods-GraphQLTests-dummy.m */,
+				3643E4394189F759C024266426825EF3 /* Pods-GraphQLTests-frameworks.sh */,
+				BB64D73F21F19054A8E1B1F3F7894588 /* Pods-GraphQLTests-resources.sh */,
+				E8AD90C60382EDEF9A4BB17E3720174A /* Pods-GraphQLTests-umbrella.h */,
+				C5305F92EA6693F481EF75C6CA625369 /* Pods-GraphQLTests.debug.xcconfig */,
+				2C0891B81FCFBFC3B14F9794B36B1D9F /* Pods-GraphQLTests.release.xcconfig */,
+			);
+			name = "Pods-GraphQLTests";
+			path = "Target Support Files/Pods-GraphQLTests";
+			sourceTree = "<group>";
+		};
+		30FA7F8BB9969A2BCECDACBABC79A207 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA69B0847ABFF9A2468E0938051A213 /* Pods-GraphQLTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3CBAA37D467A0CDA826F8B6F4D99AEC3 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				DA510FD54CA359FA4AA1A7437DB415FF /* engine.js */,
+			);
+			name = Engine;
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		3FF6FE42B6D87D8C6BA7A4434DEC9629 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				8478DD2ED53A13CF62F77B0164FC544F /* Classes */,
+			);
+			name = GraphQL;
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		54AC75E0A0BBC94471867ADC42139A64 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD89813C4D8E816B9424A6BCADD9B00D /* GraphQL */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		67A5D9848A19D97E069C1CBBD46F65D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBF9F1B67A8E9C3FEA0191A5DD674BA4 /* Resources */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				54AC75E0A0BBC94471867ADC42139A64 /* Development Pods */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				830D616257CD8512CB46AAA4C8C3DF83 /* Products */,
+				30FA7F8BB9969A2BCECDACBABC79A207 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		830D616257CD8512CB46AAA4C8C3DF83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E2FC19CE76157C497F5EDFDC4FE5DF2 /* GraphQL.framework */,
+				6ED72F5C35DCFF85F3C18E858446BDC2 /* Pods_GraphQLTests.framework */,
+				FD969913EAFF4AAE051534FD7FFA73E5 /* Scripts.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8478DD2ED53A13CF62F77B0164FC544F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E48AE22F48CFAF4C20C8A391B860E702 /* GQLEngine.h */,
+				FEA14FBA74323EF7BD249C46796D77EE /* GQLEngine.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		99371E1381D455A97DFBAE32CD357D06 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2AC951B6C5D354A3B6ECB6C9D6BFE /* Cocoa.framework */,
+				3D48A966C1F6CF3D5391D8A5B6C105E0 /* JavaScriptCore.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		B49BB9930700B0F66CAEFCE8E4BEB401 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE7966780E9717BCDEAF7E213A636CBF /* GraphQL.modulemap */,
+				1D61D02274D91F785FB8011DD63A360F /* GraphQL.xcconfig */,
+				D91AE44447853961324D54E61C25FDEA /* GraphQL-dummy.m */,
+				CB898D617232AE41D26F8962D6CE512E /* GraphQL-prefix.pch */,
+				CECF372BA470C280290DB41FC9DB3D12 /* GraphQL-umbrella.h */,
+				36548284C1EDA578590AF563A1846EA2 /* Info.plist */,
+				860385C0A7A128B514ABDF412AE8A940 /* ResourceBundle-Scripts-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GraphQL";
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99371E1381D455A97DFBAE32CD357D06 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD89813C4D8E816B9424A6BCADD9B00D /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				3FF6FE42B6D87D8C6BA7A4434DEC9629 /* GraphQL */,
+				67A5D9848A19D97E069C1CBBD46F65D3 /* Resources */,
+				B49BB9930700B0F66CAEFCE8E4BEB401 /* Support Files */,
+			);
+			name = GraphQL;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EBF9F1B67A8E9C3FEA0191A5DD674BA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CBAA37D467A0CDA826F8B6F4D99AEC3 /* Engine */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83E3C50CF71D5019BDE2B79BAC1DFF9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9B24FCB00F0C6A771A2B7968ACF023 /* Pods-GraphQLTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0E22B02E2189D3AF97D81C37E6E6A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445E881D9C7939BEEE49681FE90371C5 /* GQLEngine.h in Headers */,
+				FDF8F95AF435DFC9CF46C63BBA4F165C /* GraphQL-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		334596E5CD702959F289D0EC66E0B130 /* GraphQL-Scripts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B9FBBE1DC14B5A4FAADAA95DE2BDC2 /* Build configuration list for PBXNativeTarget "GraphQL-Scripts" */;
+			buildPhases = (
+				D3B64165F0529727C515851C3029C82C /* Sources */,
+				7455EC635427613133EFC4C7E6BE2423 /* Frameworks */,
+				0C474F77E48D9E512EC9672581C657B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GraphQL-Scripts";
+			productName = "GraphQL-Scripts";
+			productReference = FD969913EAFF4AAE051534FD7FFA73E5 /* Scripts.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8E3A8F85ADF4281A926119157E226D05 /* GraphQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F728A39A3B1FC5512048E4C949F3CEB /* Build configuration list for PBXNativeTarget "GraphQL" */;
+			buildPhases = (
+				E21B6D71790CD7B01711B84594852E24 /* Sources */,
+				5DC1DD49E22192E3BF6A0625448705F6 /* Frameworks */,
+				659588BF769764371653691EA38D9504 /* Resources */,
+				EF0E22B02E2189D3AF97D81C37E6E6A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				213EE5BCED8A2C1D98688F782EBE35EB /* PBXTargetDependency */,
+			);
+			name = GraphQL;
+			productName = GraphQL;
+			productReference = 0E2FC19CE76157C497F5EDFDC4FE5DF2 /* GraphQL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCED2FCB12C5A38D62B162DECF5502D1 /* Pods-GraphQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA9D79B01BE0B64C9A28F6CCDA55226 /* Build configuration list for PBXNativeTarget "Pods-GraphQLTests" */;
+			buildPhases = (
+				403A084D415378F12A2A34D800337744 /* Sources */,
+				A5E491FE175E16FCBB309EE35EFA2CBB /* Frameworks */,
+				83E3C50CF71D5019BDE2B79BAC1DFF9D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C24C0496E34D56A6F66DBF5009EE1951 /* PBXTargetDependency */,
+			);
+			name = "Pods-GraphQLTests";
+			productName = "Pods-GraphQLTests";
+			productReference = 6ED72F5C35DCFF85F3C18E858446BDC2 /* Pods_GraphQLTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 830D616257CD8512CB46AAA4C8C3DF83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E3A8F85ADF4281A926119157E226D05 /* GraphQL */,
+				334596E5CD702959F289D0EC66E0B130 /* GraphQL-Scripts */,
+				CCED2FCB12C5A38D62B162DECF5502D1 /* Pods-GraphQLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C474F77E48D9E512EC9672581C657B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F918FFD41B51D40323891B6B264CA6 /* engine.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659588BF769764371653691EA38D9504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC405F1D20082E630A01E605AA438B20 /* Scripts.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		403A084D415378F12A2A34D800337744 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54467802234AD6C4F346810E90416FFE /* Pods-GraphQLTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B64165F0529727C515851C3029C82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21B6D71790CD7B01711B84594852E24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038B4B88D524A17E45B3FB98251AB5BB /* GQLEngine.m in Sources */,
+				5E1E7B797774FFD25FB37EA34FD1DDF2 /* GraphQL-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		213EE5BCED8A2C1D98688F782EBE35EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GraphQL-Scripts";
+			target = 334596E5CD702959F289D0EC66E0B130 /* GraphQL-Scripts */;
+			targetProxy = D0D4CFD2C9FD13E4F7248208AD25B826 /* PBXContainerItemProxy */;
+		};
+		C24C0496E34D56A6F66DBF5009EE1951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GraphQL;
+			target = 8E3A8F85ADF4281A926119157E226D05 /* GraphQL */;
+			targetProxy = 90DBDF2A1CD12E986BA06E529DCBE925 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CD047B6D96D19510C11ED6B50E21107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D61D02274D91F785FB8011DD63A360F /* GraphQL.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GraphQL";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/GraphQL/ResourceBundle-Scripts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Scripts;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		30ECB2600A333D8037702B14BB65B818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5305F92EA6693F481EF75C6CA625369 /* Pods-GraphQLTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GraphQLTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-GraphQLTests/Pods-GraphQLTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GraphQLTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34342BBF37D3A9ED85FF2EB654934920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A4B69570C66A7ECD57929F983864233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0891B81FCFBFC3B14F9794B36B1D9F /* Pods-GraphQLTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GraphQLTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-GraphQLTests/Pods-GraphQLTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GraphQLTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3AAEED5257D5CAC09E270DDB9D1A66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D61D02274D91F785FB8011DD63A360F /* GraphQL.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GraphQL/GraphQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphQL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GraphQL/GraphQL.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GraphQL;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4558FD0A07B914FB7996D82E2046F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D61D02274D91F785FB8011DD63A360F /* GraphQL.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GraphQL";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/GraphQL/ResourceBundle-Scripts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Scripts;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EAF32AD977EEE5FC6170E70FF1C7308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D61D02274D91F785FB8011DD63A360F /* GraphQL.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GraphQL/GraphQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GraphQL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GraphQL/GraphQL.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GraphQL;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6FC88CB717F413199C282718D2DC09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34342BBF37D3A9ED85FF2EB654934920 /* Debug */,
+				F6FC88CB717F413199C282718D2DC09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA9D79B01BE0B64C9A28F6CCDA55226 /* Build configuration list for PBXNativeTarget "Pods-GraphQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30ECB2600A333D8037702B14BB65B818 /* Debug */,
+				5A4B69570C66A7ECD57929F983864233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F728A39A3B1FC5512048E4C949F3CEB /* Build configuration list for PBXNativeTarget "GraphQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AAEED5257D5CAC09E270DDB9D1A66D /* Debug */,
+				EAF32AD977EEE5FC6170E70FF1C7308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B9FBBE1DC14B5A4FAADAA95DE2BDC2 /* Build configuration list for PBXNativeTarget "GraphQL-Scripts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4558FD0A07B914FB7996D82E2046F9E /* Debug */,
+				2CD047B6D96D19510C11ED6B50E21107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

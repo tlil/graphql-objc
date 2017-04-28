@@ -77,5 +77,31 @@ static GraphQLEngine* engine;
         }
     }];
 }
+    
+- (void)testPolymorphicQuery {
+    XCTestExpectation *successExpectation =
+    [self expectationWithDescription:@"Successful query"];
+    
+    GQLQueryType *root = [[GQLQueryType alloc] init];
+    
+    [engine executeQuery:@"{ capabilities { __typename } }"
+                withRoot:root
+             andCallback:^(NSString* error, NSString* result)
+     {
+         if ([result isEqualToString:@"{\"data\":{\"capabilities\":[{\"__typename\":\"CaptureCapability\"},{\"__typename\":\"TaggingCapability\"}]}}"]) {
+             [successExpectation fulfill];
+         } else {
+             NSLog(@"Error: %@", result);
+             XCTFail(@"Invalid response from query");
+         }
+     }];
+    
+    [self waitForExpectationsWithTimeout:2 handler:^(NSError * _Nullable error) {
+        if (error != nil) {
+            XCTFail(@"Query timed out");
+        }
+    }];
+}
+
 
 @end
