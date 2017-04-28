@@ -15,7 +15,7 @@ GraphQLType(Query)
 
 -(NSString*) hello;
 
--(NSArray*) capabilities;
+-(NSArray*) vehicles;
 
 GraphQLTypeEnd(Query)
 

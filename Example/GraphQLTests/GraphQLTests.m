@@ -84,11 +84,11 @@ static GraphQLEngine* engine;
     
     GQLQueryType *root = [[GQLQueryType alloc] init];
     
-    [engine executeQuery:@"{ capabilities { __typename } }"
+    [engine executeQuery:@"{ vehicles { __typename numberOfWheels ... on Car { numberOfDoors } } }"
                 withRoot:root
              andCallback:^(NSString* error, NSString* result)
      {
-         if ([result isEqualToString:@"{\"data\":{\"capabilities\":[{\"__typename\":\"CaptureCapability\"},{\"__typename\":\"TaggingCapability\"}]}}"]) {
+         if ([result isEqualToString:@"{\"data\":{\"vehicles\":[{\"__typename\":\"Car\",\"numberOfWheels\":4,\"numberOfDoors\":4},{\"__typename\":\"Motorbike\",\"numberOfWheels\":2}]}}"]) {
              [successExpectation fulfill];
          } else {
              NSLog(@"Error: %@", result);

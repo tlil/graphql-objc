@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "GQLQueryType.h"
-#import "GQLCaptureCapabilityType.h"
-#import "GQLTaggingCapabilityType.h"
+#import "GQLCarType.h"
+#import "GQLMotorbikeType.h"
 
 GraphQLTypeImplementation(Query)
 
@@ -18,11 +18,11 @@ GraphQLTypeImplementation(Query)
     return @"Hello world";
 }
 
--(NSArray*) capabilities
+-(NSArray*) vehicles
 {
-    GQLCaptureCapabilityType *cap1 = [[GQLCaptureCapabilityType alloc] init];
-    GQLTaggingCapabilityType *cap2 = [[GQLTaggingCapabilityType alloc] init];
-    return [NSArray arrayWithObjects: cap1, cap2, nil];
+    GQLCarType *v1 = [[GQLCarType alloc] init];
+    GQLMotorbikeType *v2 = [[GQLMotorbikeType alloc] init];
+    return [NSArray arrayWithObjects: v1, v2, nil];
 }
     
 GraphQLTypeImplementationEnd
