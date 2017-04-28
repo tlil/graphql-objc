@@ -11,14 +11,12 @@
 
 #import <GraphQL/GQLEngine.h>
 
-@protocol GQLQueryTypeExport <JSExport>
+GraphQLType(Query)
 
 -(NSString*) hello;
 
-@end
+-(NSArray*) capabilities;
 
-@interface GQLQueryType : NSObject <GQLQueryTypeExport>
-
-@end
+GraphQLTypeEnd(Query)
 
 #endif /* GQLQuery_h */
