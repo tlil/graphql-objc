@@ -1,6 +1,6 @@
 {
   "name": "GraphQL",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "Library for creating GraphQL schemas and executing queries in Objective-C.",
   "description": "Use the Javascript reference implementation from Facebook to create GraphQL\nschemas and execute queries in Objective-C.",
   "homepage": "https://github.com/tlil/graphql-objc",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/tlil/graphql-objc.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": [
     "Classes",
