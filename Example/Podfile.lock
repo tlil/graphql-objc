@@ -1,7 +1,7 @@
 PODS:
-  - GraphQL (0.0.2):
-    - GraphQL/Resources (= 0.0.2)
-  - GraphQL/Resources (0.0.2)
+  - GraphQL (0.0.3):
+    - GraphQL/Resources (= 0.0.3)
+  - GraphQL/Resources (0.0.3)
 
 DEPENDENCIES:
   - GraphQL (from `../`)

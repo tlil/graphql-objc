@@ -6,7 +6,6 @@
 //  Copyright © 2017 Tommy Lillehagen. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 @import JavaScriptCore;
 
 #define FileReference(bundle, file) \

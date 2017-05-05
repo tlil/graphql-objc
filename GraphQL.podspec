@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "GraphQL"
-  s.version               = "0.0.2"
+  s.version               = "0.0.3"
   s.summary               = "Library for creating GraphQL schemas and executing queries in Objective-C."
 
   s.description           = <<-DESC
