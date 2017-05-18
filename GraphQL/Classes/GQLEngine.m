@@ -7,6 +7,7 @@
 //
 
 #import "GQLEngine.h"
+#import "TimerJS.h"
 
 @implementation GraphQLEngine
 
@@ -21,6 +22,7 @@
     {
         errorHandler([exception toString]);
     };
+    [TimerJS registerInto:engine.context];
     [engine initializeEngine];
     [engine buildSchema:schema];
     return engine;
