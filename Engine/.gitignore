@@ -1,3 +1,5 @@
 node_modules/
 engine.packed.js
+*.generated.js
+output.*.js
 npm-debug.log
