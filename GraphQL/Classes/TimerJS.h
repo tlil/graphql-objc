@@ -3,6 +3,13 @@
 
 @import JavaScriptCore;
 
+#import <Foundation/Foundation.h>
+
+@interface NSTimer (Blocks)
++(id)scheduledTimerWithTimeIntervalWrap:(NSTimeInterval)inTimeInterval block:(void (^)())inBlock repeats:(BOOL)inRepeats;
++(id)timerWithTimeInterval:(NSTimeInterval)inTimeInterval block:(void (^)())inBlock repeats:(BOOL)inRepeats;
+@end
+
 @protocol TimerJSExport <JSExport>
 
 -(NSString*)setTimeout:(JSValue*)args;
