@@ -4,14 +4,22 @@
   "description": "Wrapper for use in graphql-objc",
   "main": "index.js",
   "scripts": {
-    "build": "webpack && mv engine.js engine.packed.js && babel --no-comments --minified -o engine.js engine.packed.js"
+    "normalize-promise": "babel promise.js --presets es2015,react,stage-2 --no-comments --minified -o promise.generated.js",
+    "normalize-index": "babel index.js --presets es2015,react,stage-2 -o index.generated.js",
+    "pack": "webpack && cat output.promise.js promise.bootstrap.js output.engine.js > engine.js",
+    "minify": "mv engine.js engine.packed.js && babel --no-comments --minified -o engine.js engine.packed.js",
+    "build": "npm run normalize-promise && npm run normalize-index && npm run pack && npm run minify"
   },
   "author": "Tommy Lillehagen",
   "dependencies": {
-    "graphql": "^0.9.1"
+    "graphql": "^0.9.1",
+    "promise": "^7.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "webpack": "^2.3.3"
   }
 }
