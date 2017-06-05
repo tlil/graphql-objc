@@ -80,20 +80,21 @@
     andOperationName:(NSString*)operationName
          andCallback:(void(^)(NSString* error, NSString* result)) callback
 {
-    // TODO thread-safety
-    self.context[@"q"] = query;
-    self.context[@"v"] = variables;
-    self.context[@"o"] = operationName;
-    self.context[@"r"] = root;
-    self.context[@"c"] = ^(JSValue* error, JSValue *result)
-    {
-        if (![error isNull]) {
-            callback([error toString], nil);
-        } else {
-            callback(nil, [result toString]);
-        }
-    };
-    [self.context evaluateScript:@"engine.executeQuery(q, v, o, r, c);"];
+    @synchronized(self.context) {
+        self.context[@"q"] = query;
+        self.context[@"v"] = variables;
+        self.context[@"o"] = operationName;
+        self.context[@"r"] = root;
+        self.context[@"c"] = ^(JSValue* error, JSValue *result)
+        {
+            if (![error isNull]) {
+                callback([error toString], nil);
+            } else {
+                callback(nil, [result toString]);
+            }
+        };
+        [self.context evaluateScript:@"engine.executeQuery(q, v, o, r, c);"];
+    }
 }
 
 @end
